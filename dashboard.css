@@ -1,0 +1,99 @@
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th {
+    background-color: #222;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Product image */
+table img {
+    border-radius: 6px;
+}
+
+/* Remove button */
+.del {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.del:hover {
+    background-color: #c0392b;
+}
+
+/* Total amount */
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: #111;
+}
+
+/* Action buttons */
+.btn {
+    display: block;
+    margin: 10px 5px;
+    padding: 10px 18px;
+    background-color: #4c43cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1da851;
+}
+
+/* Center bottom buttons */
+a.btn {
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        font-size: 14px;
+    }
+
+    table img {
+        width: 50px;
+    }
+}

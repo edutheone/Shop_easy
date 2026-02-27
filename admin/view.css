@@ -1,0 +1,108 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Table wrapper for responsiveness */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table headers */
+table th {
+  background: #0078d7;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* Table cells */
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Alternate row colors */
+table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 2px;
+  background: #0078d7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005a9e;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto; /* horizontal scroll if needed */
+    white-space: nowrap;
+  }
+
+  table th, table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  table th, table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 4px 0;
+  }
+}

@@ -1,0 +1,15 @@
+CREATE TABLE payments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT NOT NULL,
+    checkout_request_id VARCHAR(50),
+    merchant_request_id VARCHAR(50),
+    amount DECIMAL(10,2),
+    phone VARCHAR(15),
+    receipt VARCHAR(20),
+    result_code INT,
+    result_desc VARCHAR(255),
+    status ENUM('SUCCESS','FAILED','CANCELLED','PENDING') DEFAULT 'PENDING',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (order_id) REFERENCES orders(id)
+);
